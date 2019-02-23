@@ -53,7 +53,7 @@ Procedure:
 
    ``export KOPS_STATE_STORE=s3://<your_s3_bucket_name_here>``
 
-#. Set the region to deploy in
+#. Set the region to deploy in::
 
       export REGION=`curl -s http://169.254.169.254/latest/dynamic/instance-identity/document|grep region|awk -F\" '{print $4}'`
 
